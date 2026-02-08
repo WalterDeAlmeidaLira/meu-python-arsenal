@@ -1,0 +1,74 @@
+# .gitignore
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Ctypes
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual Environment
+venv/
+env/
+ENV/
+.env
+.venv
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# IDEs e Editores
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Arquivos de Dados e Logs (IMPORTANTE)
+*.log
+*.sqlite3
+*.db
+
+# Arquivos Sensíveis (MUITO IMPORTANTE)
+.env
+.env.local
+config.py  # Se contiver senhas
+secrets.py
+
+# Arquivos de Teste (Para não subir seus PDFs pessoais)
+*.pdf
+*.docx
+*.xlsx
+*.csv
+!tests/samples/*.pdf  # Exceção: permite subir PDFs de exemplo que estejam DENTRO de tests/samples
